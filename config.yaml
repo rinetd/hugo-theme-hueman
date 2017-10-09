@@ -1,0 +1,63 @@
+title: "Pytool Blog"
+languageCode: "zh-CN"
+baseurl: "pytool.com"
+copyright: "Copyright (c) 2017. All rights reserved.  <a href='http://www.miitbeian.gov.cn/'>粤ICP备17074587号-1</a>"
+theme: "hugo-rapid-theme"
+MetaDataFormat: "yaml"
+canonifyurls: true
+builddrafts: false
+PaginatePath: paginator
+pygmentsStyle: "default"
+pygmentsUseClasses: true
+disablePathToLower: true
+hasCJKLanguage: true
+permalinks:
+  posts: /:year/:month/:day/:slug/
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+
+outputFormats:
+  RSS:
+    mediatype: "application/rss"
+    baseName: "feed"
+
+Taxonomies:
+  tag: "tags"
+  category: "categories"
+  series: "series"
+
+author:
+  name: "rinetd"
+
+params:
+  GitHubUser: "pytool"
+  SidebarRecentLimit: 5
+  DateForm : "2006年01月02日 15:04:05"
+  Tagline: "一个程序员的思考与总结"
+  Description: "如果你没有感觉到时间不够用时，你多半正在虚度光阴。"
+  Keywords: "独立博客,程序员,思考,读书笔记,技术分享"
+
+menu:
+  main:
+      - Name: "归档"
+        Pre: "<i class='fa fa-heart'></i>"
+        Weight: -110
+        Identifier: "post"
+        URL: "/post/"
+      - Name: "关于我"
+        Pre: "<i class='fa fa-road'></i>"
+        Identifier: "about"
+        Weight: -100
+        URL: "/about/"
+
+images:
+  - 480x
+  - 768x
+  - 960x
+  - 1024x
+  - 1920x
+  - 720x340
+  - 520x245
