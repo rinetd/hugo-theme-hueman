@@ -10,7 +10,7 @@
               <p class="post-date">{{ .Date.Format .Site.Params.DateForm }}</p>
           </div>
           <h2 class="post-title">
-              <a href="{{ .Permalink }}" rel="bookmark" title="{{ .Title }}">{{ .Title }}</a>
+              <a href="{{ .Permalink }}" rel="bookmark" title="{{ .Title | singularize }}">{{ .Title | singularize }}</a>
           </h2>
           <div class="entry excerpt">
               <p>{{ .Summary }}</p>

@@ -1,0 +1,10 @@
+<div id="categories-2" class="widget widget_categories"><h3>分类</h3>
+  <ul>
+    {{ range $name, $value := .Site.Taxonomies.categories }}
+      <li class="cat-item cat-item-1">
+        <a rel="nofollow" href="/categories/{{ $name | urlize }}/">{{ title $name }}</a>
+        <small>({{ .Count }})</small>
+      </li>
+    {{ end }}
+  </ul>
+</div>

@@ -1,0 +1,7 @@
+<div id="tag_cloud-2" class="widget widget_tag_cloud"><h3>标签云</h3>
+  <div class="tagcloud post-tags">
+      {{ range $name, $value := .Site.Taxonomies.tags }}
+         <a rel="tag" href="tags/{{ $name | urlize }}/" class="tag-link-{{- (sub 11 (len $name)) -}}" title="1 Posts">{{ $name }}<small>({{ .Count }})</small></a>
+      {{end}}
+  </div>
+</div>

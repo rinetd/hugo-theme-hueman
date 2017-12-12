@@ -4,7 +4,7 @@ baseurl: "pytool.com"
 copyright: "Copyright (c) 2017. All rights reserved.  <a href='http://www.miitbeian.gov.cn/'>粤ICP备17074587号-1</a>"
 theme: "hugo-rapid-theme"
 MetaDataFormat: "yaml"
-canonifyurls: true
+# canonifyurls: true
 builddrafts: false
 PaginatePath: paginator
 pygmentsStyle: "default"
@@ -36,7 +36,7 @@ params:
   GitHubUser: "pytool"
   SidebarRecentLimit: 5
   DateForm : "2006年01月02日 15:04:05"
-  Tagline: "一个程序员的思考与总结"
+  Tagline: "thinking"
   Description: "如果你没有感觉到时间不够用时，你多半正在虚度光阴。"
   Keywords: "独立博客,程序员,思考,读书笔记,技术分享"
 

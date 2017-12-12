@@ -1,0 +1,11 @@
+<ul class="post-nav group">
+    <li class="next">
+      {{if .Next}}
+      <a href="{{ .Next.Permalink}}" rel="next">
+        <i class="fa fa-chevron-right"></i>
+        <strong>Next post</strong>
+        <span>{{.Next.Title}}</span>
+      </a>
+      {{end}}
+  </li>
+</ul>

@@ -1,0 +1,14 @@
+{{ if and .IsPage (ne .Params.comment false) }}
+<section id="comments" class="themeform">
+  <!-- {{ template "_internal/disqus.html" . }} -->
+
+  {{- if and .Site.Params.changyanAppid .Site.Params.changyanAppkey -}}
+    {{ partial "comments_changyan.html" . }}
+  {{ end }}
+
+  {{ partial "comments_disqus.html" . }}
+  <!-- {{ partial "comments_duoshuo.html" . }} -->
+
+
+</section>
+{{- end }}

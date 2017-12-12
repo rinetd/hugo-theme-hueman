@@ -5,13 +5,14 @@
     <div class="nav-text"><!-- put your mobile menu text here --></div>
     <div class="nav-wrap container">
       <a rel="nofollow" href="{{ .Site.BaseURL }}/" class="nav-cs-icon">
-        <img width="40" height="40" src="/public/coderzh.jpg" alt="coderzh" title="Home">
+        <img width="40" height="40" src="/public/avatar.png" alt="{{ .Site.Author.name }}" title="Home">
       </a>
       <ul id="menu-default-menu" class="nav container-inner group">
         <li class="menu-item menu-item-type-post_type menu-item-object-page">
           <a rel="nofollow" href="/">首页</a>
         </li>
         {{ range .Site.Sections }}
+
         <li class="menu-item menu-item-type-post_type menu-item-object-page">
           <a rel="nofollow" href="/{{ .Type | lower }}/">{{ .Type | title}}</a>
         </li>
@@ -28,6 +29,7 @@
         {{ .Site.Params.Tagline }}
         </li>
       </ul>
+
     </div>
 
     <div class="container">
@@ -52,13 +54,11 @@
 
   <div class="container group">
     <div class="container-inner">
-
       <div class="group pad">
-
         <div class="group pad">
           <h1 class="site-title">
             <a rel="nofollow" href="{{ .Site.BaseURL }}/" rel="home">
-              <img style="border-radius: 50%;width:72px;height:72px;margin:0 auto;" alt="coderzh" src="/public/coderzh.jpg"></img>
+              <img style="border-radius: 50%;width:72px;height:72px;margin:0 auto;" alt="{{ .Site.Author.name }}" src="/public/avatar.png"></img>
               {{ .Site.Title }}
             </a>
           </h1>

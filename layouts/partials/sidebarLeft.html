@@ -5,8 +5,12 @@
       <p>Follow:</p>
       {{ partial "social-links.html" . }}
     </div>
-    {{ partial "wechat.html" . }}
-    <ul class="post-nav group">
+
+    {{ partial "nav_prev.html" . }}
+    {{ partial "tax_category.html" . }}
+    <!-- {{ partial "social-wechat.html" . }} -->
+    
+     <!-- <ul class="post-nav group">
       <li class="next">
         {{if .Next}}
         <a href="{{ .Next.Permalink}}" rel="next">
@@ -25,8 +29,8 @@
         </a>
         {{end}}
       </li>
-    </ul>
-    <div id="search-2" class="widget widget_search"><h3>Search</h3>
+    </ul> -->
+  <div id="search-2" class="widget widget_search"><h3>Search</h3>
       <form method="get" class="searchform themeform" action="https://www.google.com/search">
         <div>
           <input type="text" class="search" name="q" placeholder="Press enter to start searching">

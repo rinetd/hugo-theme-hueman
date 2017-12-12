@@ -4,7 +4,21 @@
     <div class="sidebar-top group">
       <p>More</p>
     </div>
-    <div id="categories-2" class="widget widget_categories"><h3>分类</h3>
+
+    <!-- <ul class="post-nav group">
+     <li class="next">
+       {{if .Next}}
+       <a href="{{ .Next.Permalink}}" rel="next">
+         <i class="fa fa-chevron-right"></i>
+         <strong>Next post</strong>
+         <span>{{.Next.Title}}</span>
+       </a>
+       {{end}}
+     </li>
+   </ul> -->
+    {{ partial "nav_next.html" . }}
+    {{ partial "tax_tagcloud.html" . }}
+    <!-- <div id="categories-2" class="widget widget_categories"><h3>分类</h3>
       <ul>
         {{ range $name, $value := .Site.Taxonomies.categories }}
           <li class="cat-item cat-item-1">
@@ -13,14 +27,14 @@
           </li>
         {{ end }}
       </ul>
-    </div>
+    </div> -->
 
-    <div id="tag_cloud-2" class="widget widget_tag_cloud"><h3>标签云</h3>
+    <!-- <div id="tag_cloud-2" class="widget widget_tag_cloud"><h3>标签云</h3>
       <div class="tagcloud post-tags">
           {{ range $name, $value := .Site.Taxonomies.tags }}
              <a rel="tag" href="tags/{{ $name | urlize }}/" class="tag-link-{{- add (mod (sub 25 (len $name)) 9) 1 -}}" title="1 Posts">{{ $name }}<small>({{ .Count }})</small></a>
           {{end}}
       </div>
-    </div>
+    </div> -->
   </div>
 </div>
