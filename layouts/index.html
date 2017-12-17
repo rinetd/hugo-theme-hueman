@@ -9,7 +9,7 @@
         <div class="main-inner group">
           <section class="content">
             <div class="pad group">
-              {{ range first 1 .Data.Pages }}
+              {{ range first 3 .Data.Pages }}
               {{ partial "featured.html" . }}
               {{end}}
               <div class="post-list group">
@@ -28,7 +28,7 @@
               </nav>
             </div>
           </section>
-          {{ partial "sidebarLeftCategories.html" . }}
+          {{ partial "sidebarLeft.html" . }}
           {{ partial "sidebarRight.html" . }}
         </div>
       </div>

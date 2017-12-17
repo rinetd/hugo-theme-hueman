@@ -12,9 +12,10 @@
           <a rel="nofollow" href="/">首页</a>
         </li>
         {{ range .Site.Sections }}
-
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="/{{ .Type | lower }}/">{{ .Type | title}}</a>
+          {{ if ne  .Type  "post" }}
+          <li class="menu-item menu-item-type-post_type menu-item-object-page">
+            <a rel="nofollow" href="/{{ .Type | lower }}/">{{ .Type | title}}</a>
+          {{ end }}
         </li>
         {{ end }}
         {{ range .Site.Menus.main }}
@@ -58,8 +59,8 @@
         <div class="group pad">
           <h1 class="site-title">
             <a rel="nofollow" href="{{ .Site.BaseURL }}/" rel="home">
-              <img style="border-radius: 50%;width:72px;height:72px;margin:0 auto;" alt="{{ .Site.Author.name }}" src="/public/avatar.png"></img>
-              {{ .Site.Title }}
+              <!-- <img style="border-radius: 50%;width:72px;height:72px;margin:0 auto;" alt="{{ .Site.Author.name }}" src="/public/avatar.png"></img> -->
+              <!-- {{ .Site.Title }} -->
             </a>
           </h1>
           <p class="site-description"> {{ .Site.Params.Description }} </p>

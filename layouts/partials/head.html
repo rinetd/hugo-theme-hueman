@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="zh-CN" class="no-js">
 <head>
+  <meta charset="UTF-8">
   <base href="{{ .Site.BaseURL }}/">
   <script>
     document._writeOriginal = document.write;
@@ -12,10 +13,10 @@
         }
     }
   </script>
-  {{ partial "head.meta.html" . }}
-  <script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
-  <link rel="canonical" href="{{ .RelPermalink}}">
-  <link rel='shortlink' href="{{ .Permalink}}"/>
-  <link rel="shortcut icon" href="{{ .Site.BaseURL }}/public/favicon.ico"/>
-  {{ partial "head.includes.html" . }}
+{{ partial "head.meta.html" . }}
+<script>document.documentElement.className = document.documentElement.className.replace("no-js", "js");</script>
+<link rel="canonical" href="{{ .RelPermalink}}">
+<link rel='shortlink' href="{{ .Permalink}}"/>
+<link rel="shortcut icon" href="/public/favicon.ico"/>
+{{ partial "head.includes.html" . }}
 </head>
