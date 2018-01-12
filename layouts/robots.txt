@@ -1,5 +1,5 @@
 User-agent: *
 	{{ range $name, $items := .Site.Taxonomies }}
-	Disallow: /{{ $name }}/{{ end }}
+	Disallow: /{{ $name }}/	{{ end }}
 	Disallow: /404.html
-Sitemap: http://blog.pytool.com/sitemap.xml
+Sitemap: {{ .Site.BaseURL }}/sitemap.xml

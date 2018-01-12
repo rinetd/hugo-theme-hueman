@@ -31,7 +31,7 @@
                     by {{ .GetParam "author" }} · {{ .Date.Format .Site.Params.DateForm }} · {{ .WordCount }} Words ·
                     ~{{ .ReadingTime }}min reading time |
                     <!-- <a href="https://github.com/rinetd/blog/blob/master/content/{{ replace .Source.File.Path "\\" "/" }}" target="_blank">Improve on <i class="fa fa-github"></i></a> -->
-                    <a href="https://coding.net/u/rinetd/p/blog/git/edit/master/content/{{ replace .Source.File.Path "\\" "/" }}" target="_blank">Improve on <i class="fa fa-github"></i></a>
+                    <a href="https://coding.net/u/rinetd/p/blog/git/edit/master/content/{{ replace .Source.File.Path "\\" "/" }}" target="_blank">Improve on <i class="fa fa-git-square"></i></a>
                   </p>
 
                   <div class="clear"></div>
@@ -70,4 +70,5 @@
     </div>
   </div>
 </div>
+{{ partial "analytics.html" . }}
 {{ partial "footer.html" . }}

@@ -9,7 +9,7 @@
       </a>
       <ul id="menu-default-menu" class="nav container-inner group">
         <li class="menu-item menu-item-type-post_type menu-item-object-page">
-          <a rel="nofollow" href="/">首页</a>
+          <a rel="nofollow" href="/">Home</a>
         </li>
         {{ range .Site.Sections }}
           {{ if ne  .Type  "post" }}
@@ -23,12 +23,15 @@
           <a rel="nofollow" href="{{ .URL }}">{{ .Name}}</a>
         </li>
         {{ end }}
-        <li class="menu-item menu-item-type-post_type menu-item-object-page">
+
+        <!-- <li class="menu-item menu-item-type-post_type menu-item-object-page">
           <a rel="nofollow" href="{{ .RSSLink }}" type="application/rss+xml" target="_blank">订阅</a>
         </li>
+
         <li class="menu-item menu-item-type-post_type menu-item-text">
         {{ .Site.Params.Tagline }}
         </li>
+         -->
       </ul>
 
     </div>

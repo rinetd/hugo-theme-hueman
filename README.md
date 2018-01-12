@@ -1,45 +1,44 @@
-# hugo-rapid-theme
+# hugo-theme-hueman
 
-Demo: [http://blog.coderzh.com/](http://blog.coderzh.com/)
+Demo: [http://blog.pytool.com/](http://blog.pytool.com/)
 
 ## Step1 Install Hugo
 
 
 ## Step2 Create your site
 
-```
-hugo new site your-blog-name
-cd your-blog-name
-```
+```  
+hugo new site your-blog-name  
+cd your-blog-name  
+```  
 
-## Step3 Clone the theme repo
+## Step3 Clone the theme repo  
 
-```
-git clone https://github.com/coderzh/hugo-rapid-theme.git themes/hugo-rapid-theme
+```  
+git clone https://github.com/rinetd/hueman.git themes/hueman  
 
-# replace config file
-rm config.toml
-cp themes/hugo-rapid-theme/config.yaml .
-```
+# replace config file  
+rm config.toml  
+cp themes/hueman/config.yaml .  
+```  
 
-## Step4 Start your site
+## Step4 Start your site  
 
-```
-# new content
-hugo new about.md
-# start server
-hugo server
-```
+```  
+# new content  
+hugo new about.md  
+# start server  
+hugo server  
+```  
 
-## Step5 Have Fun
+## Step5 Have Fun  
 
-Now you can open [http://localhost:1313](http://localhost:1313)
+Now you can open [http://localhost:1313](http://localhost:1313)  
 
-Modify the config.yaml and other things, and have fun!
+Modify the config.yaml and other things, and have fun!  
 
-You can also make this repo as submodule:
+You can also make this repo as submodule:  
 
-```
-git init
-git submodule add https://github.com/coderzh/hugo-rapid-theme.git themes/hugo-rapid-theme
-``` 
+```  
+git init  
+```  
